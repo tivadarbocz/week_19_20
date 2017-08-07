@@ -18,8 +18,8 @@ public class Movie {
     }
 
     @Id
-    @Column(name = "id", nullable = false, insertable = true, updatable = true)
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = true, insertable = true, updatable = true)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public int getId() {
         return id;
     }
