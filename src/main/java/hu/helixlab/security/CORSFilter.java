@@ -1,11 +1,16 @@
 package hu.helixlab.security;
 
 import org.apache.log4j.Logger;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@Order(Ordered.HIGHEST_PRECEDENCE)
+@Component
 public class CORSFilter implements Filter {
 
 	private final static Logger LOGGER = Logger.getLogger(Filter.class.getName());
