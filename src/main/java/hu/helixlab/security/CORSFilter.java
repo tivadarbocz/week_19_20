@@ -1,6 +1,5 @@
-package hu.helixlab.security;
+/*package hu.helixlab.security;
 
-import org.apache.log4j.Logger;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -13,7 +12,7 @@ import java.io.IOException;
 @Component
 public class CORSFilter implements Filter {
 
-	private final static Logger LOGGER = Logger.getLogger(Filter.class.getName());
+	//private final static Logger LOGGER = Logger.getLogger(Filter.class.getName());
 
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -37,4 +36,4 @@ public class CORSFilter implements Filter {
 	@Override
 	public void destroy() {
 	}
-}
+}*/

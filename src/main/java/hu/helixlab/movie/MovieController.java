@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by Admin on 2017.07.30..
  */
-@CrossOrigin(origins = "http://localhost:8080, http://localhost:8081", maxAge = 3600, allowedHeaders = "POST, GET, PUT, OPTIONS, DELETE")
+//@CrossOrigin(origins = "http://localhost:8080, http://localhost:8081", maxAge = 3600, allowedHeaders = "POST, GET, PUT, OPTIONS, DELETE")
 @RestController
 @RequestMapping(path = "/movie")
 public class MovieController {
