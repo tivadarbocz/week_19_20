@@ -12,7 +12,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 public void addCorsMappings(CorsRegistry registry) {
 System.out.print("dfsfsdsdfsdfsdfsdfsd");
     registry.addMapping("*")
-.allowedOrigins("http://localhost:8080, http://localhost:8081, https://resttesttest.com/")
+.allowedOrigins("http://localhost:8080, http://localhost:8081, https://resttesttest.com")
 .allowedMethods("POST, GET, PUT, OPTIONS, DELETE")
 .allowedHeaders("header1", "header2", "header3")
 .exposedHeaders("header1", "header2")
