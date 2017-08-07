@@ -1,10 +1,15 @@
 package hu.helixlab.security;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class CORSFilter implements Filter {
+
+	private final static Logger LOGGER = Logger.getLogger(Filter.class.getName());
+
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
@@ -16,7 +21,7 @@ public class CORSFilter implements Filter {
 		httpResponse.setHeader("Access-Control-Expose-Headers", "custom-header1, custom-header2");
 		httpResponse.setHeader("Access-Control-Allow-Credentials", "false");
 		httpResponse.setHeader("Access-Control-Max-Age", "4800");
-		System.out.println("---CORS Configuration Completed---");
+		System.out.println("****************CORS Configuration Completed---");
 		chain.doFilter(request, response);
 	}
 
